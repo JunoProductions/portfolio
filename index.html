@@ -53,6 +53,7 @@
         <p>© 2025 Justin Poser</p>
     </footer>
 <script>
+document.addEventListener("DOMContentLoaded", function() {
     const faders = document.querySelectorAll('.fade-in');
 
     const appearOptions = {
@@ -71,6 +72,7 @@
     faders.forEach(fader => {
         appearOnScroll.observe(fader);
     });
+});
 </script>
 </body>
 </html>
